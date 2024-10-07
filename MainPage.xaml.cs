@@ -5,12 +5,22 @@ namespace CardWise
     public partial class MainPage : ContentPage
     {
         int toRepeat;
+        var repeatSection
         public MainPage()
         {
 
+            Content = new VerticalStackLayout
+            {
+                Padding = 20,
+                Spacing = 20,
+                Children =
+                {
+                    ToRepeatSection(),
+                }
+            };
         }
 
-        private void InitializeComponents ()
+        private void ToRepeatSection ()
         {
             Label labelToRepeat = new Label
             {
@@ -48,6 +58,8 @@ namespace CardWise
                 WidthRequest = 250,
                 HeightRequest = 300,
             };
+            frame.chi = vsl;
+            return frame;
         }
     }
 }
