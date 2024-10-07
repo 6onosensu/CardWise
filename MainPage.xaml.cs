@@ -7,8 +7,11 @@ namespace CardWise
         int toRepeat;
         public MainPage()
         {
-            InitializeComponent();
 
+        }
+
+        private void InitializeComponents ()
+        {
             Label labelToRepeat = new Label
             {
                 Text = "Words on repetition: ",
@@ -38,7 +41,7 @@ namespace CardWise
                 Margin = 20,
             };
 
-            VerticalStackLayout vsl = new VerticalStackLayout() { labelToRepeat, counterToRepeat, repeatBtn};
+            VerticalStackLayout vsl = new VerticalStackLayout() { labelToRepeat, counterToRepeat, repeatBtn };
 
             Frame frame = new Frame
             {
