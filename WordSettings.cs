@@ -2,7 +2,7 @@ namespace CardWise;
 
 public class WordSettings : ContentPage
 {
-	public WordSettings()
+	public WordSettings(int i)
 	{
 		
 
@@ -14,4 +14,15 @@ public class WordSettings : ContentPage
 			}
 		};
 	}
+
+	private void DeleteWord()
+	{
+
+	}
+	private void UpdateWord()
+	{
+
+	}
+	private void 
+
 }
