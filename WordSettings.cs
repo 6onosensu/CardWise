@@ -23,6 +23,5 @@ public class WordSettings : ContentPage
 	{
 
 	}
-	private void 
 
 }
